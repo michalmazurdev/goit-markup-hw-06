@@ -171,7 +171,7 @@ nav a:focus,
 .fourth-section > div,
 .fifth-section > div,
 .portfolio-section > div,
-.bottom-style div {
+.bottom-style > div {
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -435,6 +435,50 @@ nav a:focus,
   background-color: var(--blue);
 }
 
+.newsletter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 78px;
+  padding-top: 12px;
+}
+.newsletter > div {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.newsletter input {
+  padding: 0;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.newsletter button {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: var(--blue);
+  padding: 0 0 0 42px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: white;
+}
+.newsletter svg {
+  width: 24px;
+  height: 24px;
+}
 .filter-buttons {
   display: flex;
   justify-content: center;

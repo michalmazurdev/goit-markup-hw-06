@@ -467,31 +467,37 @@
           </svg>
         </button>
   
-          <form class="modal__container">
-            <h2 class="modal__heading">Zostaw swoje dane w formularzu poniżej</h2>
-            <div class="modal__input-with-icon-container">
-             <label class="modal__label" for="">Imie</label>
-              <input class="modal__input-with-icon">
+        <form class="modal__container">
+          <h2 class="modal__heading">Zostaw swoje dane w formularzu poniżej</h2>
+          <div class="modal__input-with-icon-container">
+            <label class="modal__label" for="name">Imie</label>
+            <input class="modal__input-with-icon" id="name"  name="name">
                <svg class="modal__input-icon"><use href="./images/icons.svg#icon-person-black"></use></svg>
-              </input>
-            </div>
-            <div class="modal__input-with-icon-container">
-             <label class="modal__label" for="">Telefon</label>
-             <input class="modal__input-with-icon">
-                <svg class="modal__input-icon"><use href="./images/icons.svg#icon-phone-black"></use></svg>
-              </input>
-            </div>
-            <div class="modal__input-with-icon-container">
-            <label class="modal__label" for="">Email</label>
-            <input class="modal__input-with-icon"> <svg class="modal__input-icon"><use href="./images/icons.svg#icon-email-black"></use></svg></input>
+            </input>
           </div>
-            <label class="modal__label" for="">Komentarz</label>
-            <textarea class="modal__textarea" placeholder="Wprowadź tekst"></textarea>
-            <div class="modal__checkbox">
-            <input type="checkbox"></input><label for="">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</label>
-            </div>
-            <button type="submit"> Wyślij</button>
-          </form>
+          <div class="modal__input-with-icon-container">
+            <label class="modal__label" for="phone-number">Telefon</label>
+            <input class="modal__input-with-icon" id="phone-number" name="phone-number" type="tel">
+              <svg class="modal__input-icon"><use href="./images/icons.svg#icon-phone-black"></use></svg>
+            </input>
+          </div>
+          <div class="modal__input-with-icon-container">
+            <label class="modal__label" for="email">Email</label>
+            <input class="modal__input-with-icon" id="email" name="email">
+             <svg class="modal__input-icon"><use href="./images/icons.svg#icon-email-black"></use></svg>
+            </input>
+          </div>
+          <label class="modal__label" for="">Komentarz</label>
+          <textarea class="modal__textarea" name="comment" placeholder="Wprowadź tekst"></textarea>
+          <div class="modal__checkbox-container">
+            <input class="modal__checkbox" name="consent" id="consent" type="checkbox">
+            </input>
+            <svg class="modal__checkbox-checked"><use href=".images/icons.svg#icon-checked" ></use></svg>
+            <!-- <svg class="modal__checkbox-unchecked"><use href=".images/icons.svg#icon-unchecked"></use></svg> -->
+            <label class="modal__checkbox-label" for="consent">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</label>
+          </div>
+          <button type="submit"> Wyślij</button>
+        </form>
        
       </div>
     </div>

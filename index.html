@@ -491,12 +491,13 @@
           <textarea class="modal__textarea" name="comment" placeholder="Wprowadź tekst"></textarea>
           <div class="modal__checkbox-container">
             <input class="modal__checkbox" name="consent" id="consent" type="checkbox">
+            <svg class="modal__checkbox-checked"><use href="./images/icons.svg#icon-checked"></use></svg>
+            <svg class="modal__checkbox-unchecked "><use href="./images/icons.svg#icon-unchecked"></use></svg>
             </input>
-            <svg class="modal__checkbox-checked"><use href=".images/icons.svg#icon-checked" ></use></svg>
-            <!-- <svg class="modal__checkbox-unchecked"><use href=".images/icons.svg#icon-unchecked"></use></svg> -->
-            <label class="modal__checkbox-label" for="consent">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</label>
+
+            <label class="modal__checkbox-label" for="consent">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></label>
           </div>
-          <button type="submit"> Wyślij</button>
+          <button class="modal__button" type="submit">Wyślij</button>
         </form>
        
       </div>
